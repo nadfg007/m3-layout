@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+  width: 50%;
+  height: 50%;
+  grid-template-areas: "header-0 header-1 header-2"
+  "subheader subheader subheader"
+  "body body body"
+  "aside aside aside"
+  "footer footer footer";
+  grid-template-columns: 135px 250px 135px;
+  grid-template-rows: 51px 63px 190px 118px 59px;
+}
+.container > div {
+  margin:10px;
+  padding: 10px;
+}
+
+.header-0 {
+  background-color: rgb(168, 68, 68);
+  grid-area: header-0;
+}
+.header-1 {
+  background-color: rgb(168, 68, 68);
+  grid-area: header-1;
+}
+.header-2 {
+  background-color: rgb(168, 68, 68);
+  grid-area: header-2;
+}
+.subheader {
+  background-color: rgb(168, 145, 68);
+  grid-area: subheader;
+}
+.body {
+  background-color: rgb(68, 111, 168);
+  grid-area: body;
+}
+.aside {
+  background-color: rgb(168, 68, 130);
+  grid-area: aside;
+}
+.footer {
+  background-color: rgb(168, 108, 68);
+  grid-area: footer;
+}
